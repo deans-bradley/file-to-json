@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Debug CSV to JSON",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/ftj.js",
+            "args": ["convert", "test.csv", "--pretty"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "skipFiles": ["<node_internals>/**"]
+        },
+        {
+            "name": "Debug CSV to JSON (Custom Args)",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/ftj.js",
+            "args": [],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "skipFiles": ["<node_internals>/**"]
+        }
+    ]
+}

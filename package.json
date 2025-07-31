@@ -1,0 +1,29 @@
+{
+  "name": "file-to-json",
+  "version": "1.0.0",
+  "description": "A CLI tool to convert various file formats (CSV, Excel) to JSON",
+  "main": "index.js",
+  "bin": {
+    "ftj": "./bin/ftj,js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "commander": "^14.0.0",
+    "csv-parser": "^3.2.0",
+    "xlsx": "^0.18.5"
+  },
+  "keywords": [
+    "csv",
+    "excel",
+    "xlsx",
+    "json",
+    "converter",
+    "console",
+    "cli"
+  ],
+  "author": "Bradley Deans",
+  "license": "MIT"
+}
