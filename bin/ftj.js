@@ -10,7 +10,7 @@ const excelConverter = require('../converters/excel-converter');
 const program = new Command();
 
 program
-  .name('file-to-json')
+  .name('ftj')
   .description('Convert various file formats to JSON')
   .version('1.0.0');
 
