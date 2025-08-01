@@ -38,7 +38,7 @@ ftj csv data.csv
 ftj csv employees.csv -o staff.json --pretty
 
 # Semicolon-delimited CSV
-ftj csv european-data.csv --delimiter semicolon --pretty
+ftj csv european-data.csv --delimiter comma --pretty
 ```
 
 ### Excel Conversion
@@ -83,7 +83,7 @@ ftj info data.csv
 | Option               | Short | Description                                 |
 |----------------------|-------|---------------------------------------------|
 | `--output <file>`    | `-o`  | Specify output JSON file                    |
-| `--delimiter <type>` | `-d`  | Delimiter: `comma` (default) or `semicolon` |
+| `--delimiter <type>` | `-d`  | Delimiter: `semicolon` (default) or `comma` |
 | `--pretty`           | `-p`  | Format JSON with indentation                |
 
 ### `excel` - Convert Excel files
@@ -113,10 +113,10 @@ Displays file details, supported status, and usage suggestions.
 
 **Input (employees.csv):**
 ```csv
-name,age,department,salary
-John Doe,30,Engineering,75000
-Jane Smith,28,Marketing,65000
-Bob Johnson,35,Engineering,80000
+name;age;department;salary
+John Doe;30;Engineering;75000
+Jane Smith;28;Marketing;65000
+Bob Johnson;35;Engineering;80000
 ```
 
 **Command:**
@@ -263,7 +263,7 @@ ftj csv /home/user/documents/data.csv
 - Sheet names are case-sensitive
 
 **Wrong CSV output:**
-- Try `--delimiter semicolon` for European CSV files
+- Try `--delimiter comma`
 - Check if your CSV uses a different delimiter
 
 **Memory issues with large files:**
