@@ -4,7 +4,7 @@
   "description": "A CLI tool to convert various file formats (CSV, Excel) to JSON",
   "main": "index.js",
   "bin": {
-    "ftj": "./bin/ftj,js"
+    "ftj": "./bin/ftj.js"
   },
   "scripts": {
     "start": "node index.js",
