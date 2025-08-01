@@ -25,7 +25,7 @@ async function convert(inputFile, options = {}) {
     const workbook = XLSX.readFile(inputFile);
     const sheetNames = workbook.SheetNames;
     
-    console.log(`   📋 Available sheets: ${sheetNames.join(', ')}`);
+    console.log(`   Available sheets: ${sheetNames.join(', ')}`);
 
     let result = {};
     let totalRows = 0;
