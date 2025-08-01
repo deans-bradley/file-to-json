@@ -19,7 +19,7 @@ program
   .description('Convert CSV files to JSON')
   .argument('<input>', 'Input CSV file path')
   .option('-o, --output <file>', 'Output JSON file (optional)')
-  .option('-d, --delimiter <type>', 'Delimiter type: comma or semicolon', 'comma')
+  .option('-d, --delimiter <type>', 'Delimiter type: comma or semicolon', 'semicolon')
   .option('-p, --pretty', 'Format JSON with indentation')
   .action(async (input, options) => {
     try {
@@ -51,7 +51,7 @@ program
   .description('Auto-detect file type and convert to JSON')
   .argument('<input>', 'Input file path')
   .option('-o, --output <file>', 'Output JSON file (optional)')
-  .option('-d, --delimiter <type>', 'CSV delimiter type: comma or semicolon', 'comma')
+  .option('-d, --delimiter <type>', 'CSV delimiter type: comma or semicolon', 'semicolon')
   .option('-s, --sheet <name>', 'Excel sheet name (if Excel file)')
   .option('-p, --pretty', 'Format JSON with indentation')
   .action(async (input, options) => {
