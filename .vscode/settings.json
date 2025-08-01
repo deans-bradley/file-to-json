@@ -2,6 +2,7 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "package.json": "package-lock.json, .prettier*, prettier*, .editorconfig",
+    "test.json": "*.csv, *.xlsx, *.xls"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
